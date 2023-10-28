@@ -1,0 +1,43 @@
+.carrusel {
+    position: relative;
+    max-width: 100vw;
+    height: 250px;
+  }
+  
+  .carrusel .carruselItemsContainer{
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+  }
+  
+  .carrusel .carruselItem {
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 12px 13px 0px rgba(0, 0, 0, 0.28);
+    padding: 10px;
+    transition: all .4s ease-in-out;
+    left: 100%;
+  }
+  .carrusel .carruselItem.selected{
+    left: 0;
+  }
+  .carrusel .carruselItem .productImage {
+    border-radius: 15px;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+  .carrusel .carruselItem .logo {
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+      background-position: center;
+      background-size: cover;
+      margin-top: -40px;
+  }
+  

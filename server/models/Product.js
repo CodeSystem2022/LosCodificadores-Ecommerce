@@ -1,6 +1,7 @@
-const mongoose = require('mongoose')
-mongoose.Promise = global.Promise
+const mongoose = require('mongoose') //importa la biblioteca Mongoose
+mongoose.Promise = global.Promise //configura Mongoose para utilizar el objeto Promise global para manejar operaciones asíncronas.
 
+//definimos la estructura del Producto
 const productSchema = new mongoose.Schema({
     title:{
         type: String,
@@ -33,6 +34,6 @@ const productSchema = new mongoose.Schema({
     }
 })
 
-productSchema.index({title: 'text'})
+productSchema.index({title: 'text'})//permite realizar operaciones de busqueda basado en sus titulos
 
-module.exports = mongoose.model('Product', productSchema)
+module.exports = mongoose.model('Product', productSchema)// al exportar podemas crear, actualizar leer y eliminar productos en la BD

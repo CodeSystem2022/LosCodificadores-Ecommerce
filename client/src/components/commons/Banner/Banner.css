@@ -1,0 +1,68 @@
+.bannerContainer{
+    position: relative;
+    height: 100vh;
+    background-color: var(--color-black);
+    overflow: hidden;
+}
+
+.bannerButtonsContainer{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+}
+
+.bannerButtonsContainer button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--color-white);
+    font-family: var(--font-primary);
+    margin: 0 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.bannerButtonsContainer button:hover{
+    background-color: var(--color-secondary);
+}
+.bannerButtonsContainer button.right{
+    transform: rotateZ(180deg);
+}
+
+.banner{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    transition: all .5s ease-in-out;
+}
+
+.banner.selected{
+    left: 0;
+}
+
+.bannerBulletContainer{
+    position: absolute;
+    width: 100%;
+    top: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bullet{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+}
+
+.bullet.selected{
+    background-color: var(--color-primary);
+}

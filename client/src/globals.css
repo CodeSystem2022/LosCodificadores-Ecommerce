@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:wght@100;200;400;500;600;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "League Gothic", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+  --font-primary: "League Gothic", sans-serif;
+  --font-secondary: "Montserrat", sans-serif;
+  --font-tertiary: "Roboto", sans-serif;
+  --color-primary: #9505e3;
+  --color-secondary: #20064e;
+  --color-white: #f9f9f9;
+  --color-black: #282828;
+  background-color: var(--color-white);
+}
+
+input{
+  border:1px solid var(--color-primary);
+  border-radius: 3px;
+  outline: none;
+  padding: 3px;
+  color: var(--color-black);
+}
+
+select{
+  font-family: var(--font-secondary);
+  border:none;
+  outline: none;
+  color: var(--color-secondary);
+  font-size: 15px;
+}
+option{
+  padding: 0 20px;
+}
+
+.btn-container {
+  display: flex;
+  gap: 20px;
+}

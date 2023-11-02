@@ -1,0 +1,49 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 40px;
+  }
+  
+  footer .enterpriseInfo {
+    max-width: 350px;
+  }
+  footer h2 {
+    font-family: var(--font-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+  }
+  footer ul {
+    padding: 0;
+    display: grid;
+    gap: 10px;
+  }
+  footer li {
+    list-style: none;
+  }
+  footer li a,
+  footer li {
+      text-decoration: none;
+      color: var(--color-black);
+      font-family: var(--font-secondary);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -0.24px;
+      cursor: pointer;
+  }
+  footer li:hover a,
+  footer li:hover {
+      opacity: .7;
+  }
+  
+  footer .redes .redes-icons{
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+  }
+  footer .redes img{
+      width: 40px;
+  }
+  

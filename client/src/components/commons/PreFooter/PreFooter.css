@@ -1,0 +1,30 @@
+#preFooterContainer{
+    padding: 0 100px 100px 100px;
+    display: flex;
+    gap: 20px;
+}
+#preFooterContainer .preFooterCard{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 25px;
+    border: 2px solid var(--color-primary);
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+#preFooterContainer .preFooterCard:hover{
+    transform: translateY(-20px);
+}
+#preFooterContainer .preFooterCard h2{
+    margin: 0;
+    font-family: var(--font-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.427px;
+    color: var(--color-secondary);
+}
+#preFooterContainer .preFooterCard p{
+    font-family: var(--font-secondary);
+}

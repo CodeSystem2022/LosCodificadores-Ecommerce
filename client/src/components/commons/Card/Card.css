@@ -1,0 +1,33 @@
+.card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    width: min-content;
+  }
+  
+  .card h2,
+  .card p {
+    margin: 0;
+  }
+  
+  .card p {
+    font-family: var(--font-secondary);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.27px;
+    color: var(--color-black);
+  }
+  
+  .card img {
+    max-width: 200px;
+  }
+  
+  .card .btnContainer{
+      margin-top: 20px;
+  }
+  

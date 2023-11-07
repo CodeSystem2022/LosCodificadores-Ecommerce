@@ -1,0 +1,152 @@
+[
+    {
+    "name": "Microprocesador AMD RYZEN 3 4100",
+    "description": "Procesador gamer AMD Ryzen 3 4100 100-100000510BOX de 4 núcleos y 4GHz de frecuencia",
+    "images": [
+      "/imagenes/microprocesadores/0/1",
+      "/imagenes/microprocesadores/0/2",
+      "/imagenes/microprocesadores/0/3",
+      "/imagenes/microprocesadores/0/4",
+      "/imagenes/microprocesadores/0/5"
+    ],
+    "price": 87.499,
+    "stock": 9,
+    "offer": true,
+    "category": "microprocesadores"
+  },
+    {
+    "name": "Microprocesador AMD RYZEN 5 5600g",
+    "description": "Procesador Gamer Amd Ryzen 5 5600g 6 Núcleos 4.4ghz",
+    "images": [
+      "/imagenes/microprocesadores/1/1",
+      "/imagenes/microprocesadores/1/2",
+      "/imagenes/microprocesadores/1/3",
+      "/imagenes/microprocesadores/1/4",
+      "/imagenes/microprocesadores/1/5"
+    ],
+    "price": 289.999,
+    "stock": 7, 
+    "offer": true,
+    "category": "microprocesadores"
+  },
+    {
+    "name": "Microprocesador AMD RYZEN 5 7600x",
+    "description": "Microprocesador Amd Ryzen 5 7600x 32mb 5.3ghz Am5",
+    "images": [
+      "/imagenes/microprocesadores/2/1",
+      "/imagenes/microprocesadores/2/2",
+      "/imagenes/microprocesadores/2/3",
+      "/imagenes/microprocesadores/2/4",
+      "/imagenes/microprocesadores/2/5"
+    ],
+    "price": 372.349,
+    "stock": 2,
+    "offer": false,
+    "category": "microprocesadores"
+  },
+  {
+    "name": "Microprocesador AMD RYZEN 7 5700",
+    "description": "Procesador gamer AMD Ryzen 7 5700X 100-100000926WOF de 8 núcleos y 4.6GHz de frecuencia sin graficos integrada",
+    "images": [
+      "/imagenes/microprocesadores/3/1",
+      "/imagenes/microprocesadores/3/2",
+      "/imagenes/microprocesadores/3/3",
+      "/imagenes/microprocesadores/3/4",
+      "/imagenes/microprocesadores/3/5"
+    ],
+    "price": 380.690,
+    "stock": 6,
+    "offer": true,
+    "category": "microprocesadores"
+  },
+    {
+    "name": "Microprocesador AMD RYZEN 9 7950",
+    "description": "Microprocesador Amd Ryzen 9 7950x 64mb 5.7ghz Am5",
+    "images": [
+      "/imagenes/microprocesadores/4/1",
+      "/imagenes/microprocesadores/4/2",
+      "/imagenes/microprocesadores/4/3",
+      "/imagenes/microprocesadores/4/4",
+      "/imagenes/microprocesadores/4/5"
+    ],
+    "price": 896.730,
+    "stock": 2,
+    "offer": false,
+    "category": "microprocesadores"
+  },
+    {
+    "name": "Microprocesador INTEL I3 1010",
+    "description": "Procesador gamer Intel Core i3-10105 BX8070110105 de 4 núcleos y 4.4GHz de frecuencia con gráfica integrada",
+    "images": [
+      "/imagenes/microprocesadores/5/1",
+      "/imagenes/microprocesadores/5/2",
+      "/imagenes/microprocesadores/5/3",
+      "/imagenes/microprocesadores/5/4",
+      "/imagenes/microprocesadores/5/5"
+    ],
+    "price": 178.199,
+    "stock": 7,
+    "offer": false,
+    "category": "microprocesadores"
+  },
+  {
+    "name": "Microprocesador INTEL I5 1040",
+    "description": "Procesador gamer Intel Core i5-10400 BX8070110400 de 6 núcleos y 4.3GHz de frecuencia con gráfica integrada",
+    "images": [
+      "/imagenes/microprocesadores/6/1",
+      "/imagenes/microprocesadores/6/2",
+      "/imagenes/microprocesadores/6/3",
+      "/imagenes/microprocesadores/6/4",
+      "/imagenes/microprocesadores/6/5"
+    ],
+    "price": 194.999,
+    "stock": 6,
+    "offer": true,
+    "category": "microprocesadores"
+  },
+    {
+    "name": "Microprocesador INTEL I5 12600k",
+    "description": "Procesador gamer Intel Core i5-12600K BX8071512600K de 10 núcleos y 4.9GHz de frecuencia con gráfica integrada",
+    "images": [
+      "/imagenes/microprocesadores/7/1",
+      "/imagenes/microprocesadores/7/2",
+      "/imagenes/microprocesadores/7/3",
+      "/imagenes/microprocesadores/7/4",
+      "/imagenes/microprocesadores/7/5"
+    ],
+    "price": 523.600,
+    "stock": 5,
+    "offer": true,
+    "category": "microprocesadores"
+  },
+    {
+    "name": "Microprocesador INTEL I7 12700",
+    "description": "MICROPROCESADOR INTEL CORE I7-12700 4.9GHz SOCKET 1700 GEN12",
+    "images": [
+      "/imagenes/microprocesadores/8/1",
+      "/imagenes/microprocesadores/8/2",
+      "/imagenes/microprocesadores/8/3",
+      "/imagenes/microprocesadores/8/4",
+      "/imagenes/microprocesadores/8/5"
+    ],
+    "price": 519.839,
+    "stock": 4,
+    "offer": false,
+    "category": "microprocesadores"
+  },
+   {
+    "name": "Microprocesador INTEL I9 13900F",
+    "description": "Procesador Intel Core i9-13900F BX8071513900F de 24 núcleos y 5.6GHz de frecuencia",
+    "images": [
+      "/imagenes/microprocesadores/9/1",
+      "/imagenes/microprocesadores/9/2",
+      "/imagenes/microprocesadores/9/3",
+      "/imagenes/microprocesadores/9/4",
+      "/imagenes/microprocesadores/9/5"
+    ],
+    "price": 951.742,
+    "stock": 3,
+    "offer": false,
+    "category": "microprocesadores"
+  }
+]

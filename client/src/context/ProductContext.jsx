@@ -16,6 +16,14 @@ export const ProductProvider = ({ children }) => {
         setIsDataLoader(true);
       });
     }
+  
+  function getByCategoria(categoria) {
+    setIsDataLoader(false);
+    get(`products/${categoria}`).then((res) => {
+      setProducts(res);
+      setIsDataLoader(true);
+    });
+  }
 
   return (
     <ProductContext.Provider

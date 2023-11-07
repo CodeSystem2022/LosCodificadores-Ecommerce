@@ -1,0 +1,69 @@
+[
+    {
+    "name": "Fuente Netmak ATX 500W",
+    "description": "Marca: Netmak Modelo: NM-ATX500 Potencia: 500W Ventilación: Cooler 80mm Conectores: 20+4P,2HDD,2SATA,1FDD Voltaje: 220V",
+    "images": [
+      "/imagenes/fuentes/0/1"
+     ],
+    "price": 20400,
+    "stock": 20,
+    "offer": true,
+    "category": "fuentes"
+  },
+    {
+    "name": "Fuente Thermaltake Smart 500W",
+    "description": "Marca: Thermaltake Modelo: SPD-0500P Potencia: 500W Ventilación: Cooler 120mm Ultra Quiet Protección: Contra sobrecalentamiento, sobrevoltaje y cortocircuito",
+    "images": [
+      "/imagenes/fuentes/1/1",
+      "/imagenes/fuentes/1/2",
+      "/imagenes/fuentes/1/3",
+      "/imagenes/fuentes/1/4"
+    ],
+    "price": 75200,
+    "stock": 5,
+    "offer": false,
+    "category": "fuentes"
+  },
+    {
+    "name": "Fuente EVGA SuperNOVA MODULAR",
+    "description": "Marca: EVGA Modelo: SuperNOVA 750 G3 Potencia: 750W Ventilación: 130mm Hydraulic Dynamic Bearing Características Especiales: Single Rail +12v, Modular, 80+ Gold Protección: OVP, UVP, OCP, OPP, SCP y OTP",
+    "images": [
+      "/imagenes/fuentes/2/1",
+      "/imagenes/fuentes/2/2",
+      "/imagenes/fuentes/2/3",
+      "/imagenes/fuentes/2/4"
+    ],
+    "price": 198000,
+    "stock": 2,
+    "offer": false,
+    "category": "fuentes"
+  },
+  {
+    "name": "Fuente Gigabyte 750W Modular",
+    "description": "Marca: Gigabyte Modelo: P750GM Potencia: 750W Ventilación: Cooler de 120mm Características Especiales: 80 PLUS Gold Protección: OVP/OPP/SCP/UVP/OCP/OTP",
+    "images": [
+      "/imagenes/fuentes/3/1",
+      "/imagenes/fuentes/3/2",
+      "/imagenes/fuentes/3/3",
+      "/imagenes/fuentes/3/4"
+    ],
+    "price": 157600,
+    "stock": 5,
+    "offer": true,
+    "category": "fuentes"
+  },
+  {
+    "name": "Fuente Thermaltake Smart 700W",
+    "description": "Marca: Thermaltake Modelo: SPD-0700P Potencia: 700W Ventilación: Cooler 120mm Ultra Quiet Protección: Contra sobrecalentamiento, sobrevoltaje y cortocircuito",
+    "images": [
+      "/imagenes/fuentes/4/1",
+      "/imagenes/fuentes/4/2",
+      "/imagenes/fuentes/4/3",
+      "/imagenes/fuentes/4/4"
+    ],
+    "price":102400,
+    "stock": 2,
+    "offer": true,
+    "category": "fuentes"
+  }
+]

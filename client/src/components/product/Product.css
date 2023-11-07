@@ -1,0 +1,25 @@
+#product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 200px 200px 200px;
+    background-color: #fff;
+    gap: 50px;
+}
+#product .images-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+#product .images-container .actual-image img{
+    max-width: 600px;
+}
+#product .images-container .all-images{
+    display: flex;
+    gap: 10px;
+}
+#product .images-container .all-images img{
+    width: 100px;
+    cursor: pointer;
+}

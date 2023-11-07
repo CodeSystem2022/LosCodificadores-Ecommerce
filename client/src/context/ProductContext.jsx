@@ -8,6 +8,14 @@ export const ProductProvider = ({ children }) => {
   const [isDataLoaded, setIsDataLoader] = useState(false);
 
   const { get } = useApi();
+  
+    function getAllProducts() {
+      setIsDataLoader(false);
+      get("products").then((res) => {
+        setProducts(res);
+        setIsDataLoader(true);
+      });
+    }
 
   return (
     <ProductContext.Provider

@@ -16,6 +16,17 @@ body {
   background-color: var(--color-white);
 }
 
+main{
+  padding-top: 80px;
+}
+
+a{
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-family: var(--font-secondary);
+  font-size: 15px;
+}
+
 input{
   border:1px solid var(--color-primary);
   border-radius: 3px;
@@ -30,6 +41,7 @@ select{
   outline: none;
   color: var(--color-secondary);
   font-size: 15px;
+  background-color: var(--color-white);
 }
 option{
   padding: 0 20px;
@@ -37,5 +49,34 @@ option{
 
 .btn-container {
   display: flex;
+  gap: 20px;
+}
+
+.section-text {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  color: var(--color-secondary);
+  margin-bottom: 40px;
+}
+.section-text h2 {
+  font-family: var(--font-primary);
+  font-size: 46px;
+  line-height: normal;
+  letter-spacing: 0.69px;
+  margin: 0;
+}
+.section-text span {
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.24px;
+}
+
+.itemsContainer{
+  display: flex;
+  justify-content: center;
   gap: 20px;
 }

@@ -59,10 +59,7 @@ const OfertasSection = () => {
         {OFFERED_PRODUCTS.map((product) => (
           <Card
             key={product.id}
-            id={product.id}
-            title={product.title}
-            description={product.description}
-            images={product.images}
+            item={product}
           />
         ))}
       </div>

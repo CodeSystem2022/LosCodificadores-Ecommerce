@@ -8,15 +8,15 @@ export const ProductProvider = ({ children }) => {
   const [isDataLoaded, setIsDataLoader] = useState(false);
 
   const { get } = useApi();
-  
-    function getAllProducts() {
-      setIsDataLoader(false);
-      get("products").then((res) => {
-        setProducts(res);
-        setIsDataLoader(true);
-      });
-    }
-  
+
+  function getAllProducts() {
+    setIsDataLoader(false);
+    get("products").then((res) => {
+      setProducts(res);
+      setIsDataLoader(true);
+    });
+  }
+
   function getByCategoria(categoria) {
     setIsDataLoader(false);
     get(`products/${categoria}`).then((res) => {
@@ -25,9 +25,23 @@ export const ProductProvider = ({ children }) => {
     });
   }
 
+  function getProductById(id) {
+    setIsDataLoader(false);
+    get(`product/${id}`).then((res) => {
+      setProducts(res);
+      setIsDataLoader(true);
+    });
+  }
+
   return (
     <ProductContext.Provider
-      value={{ products, getAllProducts, getByCategoria, getProductById, isDataLoaded }}
+      value={{
+        products,
+        getAllProducts,
+        getByCategoria,
+        getProductById,
+        isDataLoaded,
+      }}
     >
       {children}
     </ProductContext.Provider>

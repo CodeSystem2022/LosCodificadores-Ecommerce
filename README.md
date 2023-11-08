@@ -13,8 +13,14 @@ Grupo de la Tecnicatura Universitaria en Programación de la Universidad Tecnol�
 * **Agustín Vera** - [agustinvera25](https://github.com/agustinvera25)
 
 
-| **Semana** | **Scrum Master** | **Anotaciones** |  |  | 
-| ---- | ---- | --- | --- | --- | 
+
+| **Semana** | **Scrum Master del Proyecto** | **Anotaciones** |  |  | 
+| ---- | ---- | --- | --- | --- |
+| **Spring 1** | *Agustin Vera* | **Spring realizado** | | 
+|**Spring 2** | *Agustin Vera* | **Spring realizado** | | | 
+| **Spring 3**|*Agustin Vera*  | **Spring realizado** | | | 
+| ---- | ---- | --- | --- | --- |
+| **Wiki** | *Cecilia Iribarrem*| **Algunas explicaciones del proyecto** |  |  | 
 
 
 

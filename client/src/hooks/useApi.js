@@ -1,6 +1,6 @@
 import axios from 'axios'
 export const useApi = ()=>{
-    const URL = 'http://localhost:5000/'
+    const URL = 'https://gamertech-backend.vercel.app/'
 
     const get = async (endpoint) => {
         try {

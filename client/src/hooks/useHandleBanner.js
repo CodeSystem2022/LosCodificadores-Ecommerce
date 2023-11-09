@@ -12,6 +12,7 @@ const useHandleBanner = (bannerLength, delay = 3000) => {
     }
     clearInterval(timeoutRef.current);
   }
+
   function decrementSelected() {
     if (selected > 0) {
       setSelected(selected - 1);
@@ -20,6 +21,7 @@ const useHandleBanner = (bannerLength, delay = 3000) => {
     }
     clearInterval(timeoutRef.current);
   }
+  
   function resetTimeout() {
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);

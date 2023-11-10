@@ -1,7 +1,11 @@
+import { useContext } from "react";
 import Button from "../../commons/Button/Button";
 import "./Filters.css";
+import { ProductContext } from "../../../context/ProductContext";
 
 const Filters = () => {
+  const { orderProductsByHigherPrice, orderProductsByLowerPrice } = useContext(ProductContext);
+
   return (
     <div className="filterButtonsContainer">
       <select
@@ -27,8 +31,8 @@ const Filters = () => {
         <option value="teclados">Teclados</option>
       </select>
       <div className="btn-container">
-        <Button variant="primary" text="Menor precio" />
-        <Button variant="primary" text="Mayor precio" />
+        <Button variant="primary" text="Menor precio" onClick={()=> orderProductsByLowerPrice()} />
+        <Button variant="primary" text="Mayor precio" onClick={()=> orderProductsByHigherPrice()}/>
       </div>
       <a href="/productos">Limpiar filtros</a>
     </div>

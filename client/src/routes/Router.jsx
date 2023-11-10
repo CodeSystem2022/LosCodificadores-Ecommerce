@@ -4,9 +4,15 @@ import {
 import { Home } from "../pages/Home";
 import { Product } from "../pages/Product";
 import { Products } from "../pages/Products";
-import { Error404 } from "../pages/404";
+import { Error404 } from "../pages/Error404";
+import { Developing } from "../pages/Developing";
 
 export const router = createBrowserRouter([
+  {
+    path: "*",
+    element: <Error404 />,
+    errorElement: <Error404 />
+  },
   {
     path: "/",
     element: <Home />,
@@ -22,4 +28,24 @@ export const router = createBrowserRouter([
     element: <Product />,
     errorElement: <Error404 />
   },
+  {
+    path: "/contacto",
+    element: <Developing />,
+    errorElement: <Error404 />
+  },
+  {
+    path: "/metodos_pago",
+    element: <Developing />,
+    errorElement: <Error404 />
+  },
+  {
+    path: "/envios",
+    element: <Developing />,
+    errorElement: <Error404 />
+  },
+  {
+    path: "/armapc",
+    element: <Developing />,
+    errorElement: <Error404 />
+  }
 ]);

@@ -1,17 +1,51 @@
 import gamertechLogo from "../../../assets/logos/gamertech.png";
+import cartIcon from "../../../assets/icons/cart.png";
 import Filters from "../../productos/filters/Filters";
-import Button from "../Button/Button";
 import "./Navbar.css";
+import { useContext, useState } from "react";
+import { CartContext } from "../../../context/CartContext";
+import { ProductContext } from "../../../context/ProductContext";
 
 function Navbar({ filters }) {
-  console.log(filters);
+  const [navProducts, setNavProducts] = useState([]);
+  const { getProductBySearch } = useContext(ProductContext);
+  const { openCart, cartQuantity } = useContext(CartContext);
+  function handleChange(e) {
+    if (e.target.value) {
+      getProductBySearch(e.target.value).then((res) =>
+        setNavProducts(res.products)
+      );
+    } else {
+      setNavProducts([]);
+    }
+  }
   return (
     <div className="navContainer">
       <nav>
         <a href="/">
           <img src={gamertechLogo} alt="enterprise logo" />
         </a>
-        <input type="text" />
+        <div>
+          <input type="text" onChange={(e)=>handleChange(e)}/>
+          <div
+            className={
+              navProducts.length > 0
+                ? "navbarProducts actived"
+                : "navbarProducts desactived"
+            }
+          >
+            {navProducts.map((product) => (
+              <p
+                key={product._id}
+                onClick={() =>
+                  (window.location.href = `/producto/${product._id}`)
+                }
+              >
+                {product.name}
+              </p>
+            ))}
+          </div>
+        </div>
         <ul>
           <li>
             <a href="/productos">Productos</a>
@@ -20,7 +54,7 @@ function Navbar({ filters }) {
             <a href="/armapc">Arma tu PC</a>
           </li>
           <li>
-            <a href="/contacto">Contacto</a>
+            <a href="https://wa.me/2604846152" target="_blank" rel="noreferrer">Contacto</a>
           </li>
           {!filters && (
             <li>
@@ -44,13 +78,19 @@ function Navbar({ filters }) {
                 <option value="placas_video">Placas de video</option>
                 <option value="fuentes">Fuentes de energía</option>
                 <option value="coolers">Coolers</option>
+                <option value="teclados">Teclados</option>
               </select>
             </li>
           )}
         </ul>
-        <div className="btn-container">
-          <Button text="Ingresar" variant="secondary" />
-          <Button text="Crear cuenta" variant="primary" />
+        <div className="btn-container cartIcon">
+          <img
+            src={cartIcon}
+            alt="open cart"
+            id="cartIcon"
+            onClick={openCart}
+          />
+          <div id="quantity">{cartQuantity}</div>
         </div>
       </nav>
       {filters && <Filters />}

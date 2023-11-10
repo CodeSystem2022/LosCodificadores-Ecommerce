@@ -15,8 +15,7 @@ export const router = createBrowserRouter([
   },
   {
     path: "/",
-    element: <Home />,
-    errorElement: <Error404 />
+    element: <Home />
   },
   {
     path: "/productos/:categoria?",

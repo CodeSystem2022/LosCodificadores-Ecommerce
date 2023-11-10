@@ -3,6 +3,14 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 require('./config/db.js')
 const routes = require('./routes/index.js')
+const mercadopago = require('mercadopago')
+
+//importamos y configuramos dotenv
+require('dotenv').config({path: '.env'})
+
+mercadopago.configure({
+  access_token: process.env.MP_TOKEN,
+});
 
 const app = express()
 

@@ -19,8 +19,9 @@ Grupo de la Tecnicatura Universitaria en Programaci√≥n de la Universidad Tecnol√
 | **Spring 1** | *Agustin Vera* | **Spring realizado** | | 
 |**Spring 2** | *Agustin Vera* | **Spring realizado** | | | 
 | **Spring 3**|*Agustin Vera*  | **Spring realizado** | | | 
+| **Spring 4**|*Agustin Vera*  | **Spring realizado** | | |
 | ---- | ---- | --- | --- | --- |
-| **Wiki** | *Cecilia Iribarrem*| **Algunas explicaciones del proyecto** |  |  | 
+| **Wiki** | *Cecilia Iribarren*| **Algunas explicaciones del proyecto** |  |  | 
 
 
 

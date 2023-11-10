@@ -13,6 +13,17 @@ exports.getOneProduct = async (req, res) => {
   }
 };
 
+exports.getProductsByCategory = async (req, res) => {
+  const { categoria } = req.params;
+  try {
+    const products = await Product.find({ category: categoria }).lean();
+    if (products) return res.status(200).json(products);
+  } catch (error) {
+    console.log(error);
+    return res.status(error.code).send(error.message);
+  }
+};
+
 exports.getAllProducts = async (req, res) => {
   try {
     const products = await Product.find().lean();
@@ -24,8 +35,10 @@ exports.getAllProducts = async (req, res) => {
 };
 
 exports.getOfferedProducts = async (req, res) => {
+  const { q } = req.query;
+
   try {
-    const products = await Product.find({ offer: true }).lean();
+    const products = await Product.find({ offer: true}).limit(q).lean();
     const count = await Product.countDocuments({ offer: true });
     if (products) return res.status(200).json({ products, count });
   } catch (error) {
@@ -52,16 +65,9 @@ exports.searchProduct = async (req, res) => {
   const { q } = req.query;
   try {
     const products = await Product.find({
-      $text: {
-        $search: q,
-      },
+      name: { $regex: q, $options: "i" },
     }).lean();
-    const count = await Product.countDocuments({
-      $text: {
-        $search: q,
-      },
-    });
-    if (products) return res.status(200).json({ products, count });
+    if (products) return res.status(200).json({ products });
   } catch (error) {
     console.log(error);
     return res.status(error.code).send(error.message);

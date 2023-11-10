@@ -12,7 +12,7 @@ export const useMercadoPago = () => {
     try {
       setIsLoading(true)
       const response = await axios.post(
-        "http://localhost:5000/create_preference",
+        "https://gamertech-backend.vercel.app/create_preference",
         data
       )
 

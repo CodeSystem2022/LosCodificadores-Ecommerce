@@ -7,7 +7,7 @@ const MarcasSection = () => {
     <section id="marcasSection">
       <div className="section-text">
         <h2>Garantizamos eficiencia y calidad</h2>
-        <span>Algo lindo que se nos ocurra</span>
+        <span>De la mano de las marcas líderes</span>
       </div>
       <Carrusel items={MARCAS} itemsPerView={5}/>
     </section>

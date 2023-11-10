@@ -1,34 +1,69 @@
 import "./Carrusel.css";
 import arrow from "../../../assets/icons/arrow.png";
-import { useState } from "react";
+import { useHandleCarrusel } from "../../../hooks/useHandleCarrusel";
+import { Card } from "../Card/Card";
 
-const Carrusel = ({ items }) => {
-  const [limitItems, setLimitItems] = useState(3);
-
-  function incrementPosition() {
-    setLimitItems(limitItems + 4);
-  }
-  function decrementPosition() {
-    setLimitItems(limitItems - 4);
-  }
+const Carrusel = ({ items, itemsPerView = 4, variant }) => {
+  const {
+    actualGroup,
+    decrementPosition,
+    incrementPosition,
+    isInActualGroup,
+    isInNextGroup,
+    isInPrevGroup,
+  } = useHandleCarrusel(itemsPerView);
 
   return (
     <div className="carrusel">
       <div className="bannerButtonsContainer">
-        <button onClick={decrementPosition}>
+        <button
+          className="btn primary_icon"
+          onClick={decrementPosition}
+          disabled={actualGroup === 1 ? true : false}
+        >
           <img src={arrow} />
         </button>
-        <button onClick={incrementPosition} className="right">
+        <button
+          onClick={incrementPosition}
+          className="btn primary_icon right"
+          disabled={
+            Math.round(items.length / itemsPerView) <= actualGroup
+              ? true
+              : false
+          }
+        >
           <img src={arrow} />
         </button>
       </div>
       <div className="carruselItemsContainer">
-        {items.map((item) => (
+        {items.map((item, idx) => (
           <>
+            {variant === "categoria" ? (
+              <Card
+                item={item}
+                className={
+                  isInActualGroup(idx)
+                    ? "carruselItem selected"
+                    : isInPrevGroup(idx)
+                    ? "carruselItem prev"
+                    : isInNextGroup(idx)
+                    ? "carruselItem next"
+                    : "carruselItem"
+                }
+              />
+            ) : (
               <article
-                onClick={() => console.log(item.id)}
+                onClick={() => console.log(item._id)}
                 key={item.id}
-                className={item.id <= limitItems && item.id > limitItems - 4 ? "carruselItem selected" : "carruselItem"}
+                className={
+                  isInActualGroup(item.id)
+                    ? "carruselItem selected"
+                    : isInPrevGroup(item.id)
+                    ? "carruselItem prev"
+                    : isInNextGroup(item.id)
+                    ? "carruselItem next"
+                    : "carruselItem"
+                }
               >
                 <div
                   className="productImage"
@@ -39,6 +74,7 @@ const Carrusel = ({ items }) => {
                   style={{ backgroundImage: "url(" + item.logo + ")" }}
                 ></div>
               </article>
+            )}
           </>
         ))}
       </div>

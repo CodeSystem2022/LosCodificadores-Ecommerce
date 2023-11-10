@@ -10,10 +10,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
+}
+#product .images-container .actual-image{
+    max-width: 400px;
 }
 #product .images-container .actual-image img{
-    max-width: 600px;
+    width: 100%;
 }
 #product .images-container .all-images{
     display: flex;
@@ -22,4 +25,46 @@
 #product .images-container .all-images img{
     width: 100px;
     cursor: pointer;
+    border-radius: 20px;
+}
+#product .images-container .all-images img.selected{
+    border: 2px solid var(--color-primary);
+}
+#product .product-description{
+    display: grid;
+    gap: 20px;
+}
+#product .product-description h2{
+    font-family: var(--font-secondary);
+    color: var(--color-secondary);
+    font-size: 32px;
+    font-weight: 900;
+}
+#product .product-description p{
+    font-family: var(--font-secondary);
+    color: var(--color-secondary);
+    font-size: 18px;
+    font-weight: 300;
+}
+#product .product-description .stock{
+    font-size: 14px;
+}
+.price{
+    font-family: var(--font-primary);
+    color: var(--color-primary);
+    font-size: 32px;
+    font-weight: 900;
+    position: relative;
+    width: min-content;
+}
+.price .oldprice{
+    text-decoration: line-through;
+    position: absolute;
+    font-size: 24px;
+    right: -60%;
+    top: -40%;
+}
+#product .product-description h2,
+#product .product-description p{
+    margin: 0;
 }
